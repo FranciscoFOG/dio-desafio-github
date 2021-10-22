@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-itenst</title>
+    <style>
+        .content{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: brown;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .strectch{
+            align-items: stretch;
+        }
+
+        .start{
+            align-items: flex-start;
+        }
+
+        .end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 500px;
+            justify-content: center;
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p>center</p>
+    <section class="content center">
+        <div class="item">item 1</div>
+        <div class="item">item 2 com mais texto</div>
+        <div class="item">item 3 com mais texto ainda</div>
+    </section>
+
+    <p>strectch</p>
+    <section class="content strectch">
+        <div class="item">item 1</div>
+        <div class="item">item 2 com mais texto para explicar o align-itens strectch e suas funções e utilizações</div>
+        <div class="item">item 3 com menos texto porem o suficiente</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="content start">
+        <div class="item">item 1</div>
+        <div class="item">item 2 com mais texto para explicar o align-itens strectch e suas funções e utilizações</div>
+        <div class="item">item 3 com menos texto porem o suficiente</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="content end">
+        <div class="item">item 1</div>
+        <div class="item">item 2 com mais texto para explicar o align-itens strectch e suas funções e utilizações</div>
+        <div class="item">item 3 com menos texto porem o suficiente</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="content baseline">
+        <div class="item"><br>item 1</div>
+        <div class="item">item 2 com mais texto para explicar o align-itens strectch e suas funções e utilizações</div>
+        <div class="item">item 3 com menos texto porem o suficiente</div>
+    </section>
+
+    <h1>column</h1>
+    <p>center</p>
+    <section class="content center column">
+        <div class="item">item 1</div>
+        <div class="item">item 2 com mais texto</div>
+        <div class="item">item 3 com mais texto ainda</div>
+    </section>
+
+    <p>strectch</p>
+    <section class="content strectch column">
+        <div class="item">item 1</div>
+        <div class="item">item 2 com mais texto para explicar o align-itens strectch e suas funções e utilizações</div>
+        <div class="item">item 3 com menos texto porem o suficiente</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="content start column">
+        <div class="item">item 1</div>
+        <div class="item">item 2 com mais texto para explicar o align-itens strectch e suas funções e utilizações</div>
+        <div class="item">item 3 com menos texto porem o suficiente</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="content end column">
+        <div class="item">item 1</div>
+        <div class="item">item 2 com mais texto para explicar o align-itens strectch e suas funções e utilizações</div>
+        <div class="item">item 3 com menos texto porem o suficiente</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="content baseline column">
+        <div class="item"><br>item 1</div>
+        <div class="item">item 2 com mais texto para explicar o align-itens strectch e suas funções e utilizações</div>
+        <div class="item">item 3 com menos texto porem o suficiente</div>
+    </section>
+
+    <p>alinhamento central a tela</p>
+    <section class="content central center">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit, Ratione neque non amet optio magni, et quae aliquam officia nihil fugiat.</div>
+    </section>
+</body>
+</html>
